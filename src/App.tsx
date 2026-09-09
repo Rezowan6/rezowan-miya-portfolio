@@ -3,6 +3,7 @@ import Projects from "./components/projects/Projects";
 import About from "./components/sections/about/About";
 import Experience from "./components/sections/experience/Experience";
 import Hero from "./components/sections/hero/Hero";
+import Services from "./components/sections/services/Services";
 import Skills from "./components/sections/skill/Skills";
 
 function App() {
@@ -21,12 +22,7 @@ function App() {
 
         <Experience />
 
-        <section
-          id="services"
-          className="flex min-h-[60vh] items-center justify-center border-t border-theme-border"
-        >
-          <h2 className="text-3xl font-bold">Services</h2>
-        </section>
+        <Services />
 
         <section
           id="certificates"
