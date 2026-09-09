@@ -9,113 +9,61 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="
-        relative
-        overflow-hidden
-        border-b
-        border-theme-border
-      "
+      className="relative overflow-hidden border-b border-theme-border"
     >
       {/* Background decoration */}
       <div
         aria-hidden="true"
-        className="
-          pointer-events-none
-          absolute
-          left-1/2
-          top-0
-          -z-10
-          h-80
-          w-80
-          -translate-x-1/2
-          rounded-full
-          bg-theme-primary/10
-          blur-3xl
-        "
+        className="pointer-events-none absolute left-1/2 top-0 -z-10 h-80 w-80 -translate-x-1/2 rounded-full bg-theme-primary/10 blur-3xl"
       />
 
-      <div
-        className="
-          mx-auto
-          grid
-          min-h-[calc(100vh-72px)]
-          max-w-7xl
-          items-center
-          gap-12
-          px-6
-          py-20
-          lg:grid-cols-[1.15fr_0.85fr]
-          lg:px-8
-          lg:py-24
-        "
-      >
+      <div className="mx-auto grid min-h-[calc(100vh-72px)] max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[1.15fr_0.85fr] lg:px-8 lg:py-24">
         {/* Content */}
         <div className="max-w-3xl">
           <p
-            className="
-              mb-5
-              text-sm
-              font-semibold
-              uppercase
-              tracking-[0.2em]
-              text-theme-primary
-            "
+            className="animate-hero-fade-up mb-5 text-sm font-semibold uppercase tracking-[0.2em] text-theme-primary"
+            style={{ animationDelay: "100ms" }}
           >
             Hello, I&apos;m
           </p>
 
           <h1
-            className="
-              text-4xl
-              font-bold
-              leading-tight
-              tracking-tight
-              text-theme-foreground
-              sm:text-5xl
-              lg:text-6xl
-              xl:text-7xl
-            "
+            className="animate-hero-fade-up text-4xl font-bold leading-tight tracking-tight text-theme-foreground sm:text-5xl lg:text-6xl xl:text-7xl"
+            style={{ animationDelay: "180ms" }}
           >
             Rezowan Miya
           </h1>
 
           <h2
-            className="
-              mt-4
-              text-2xl
-              font-semibold
-              leading-tight
-              text-theme-muted
-              sm:text-3xl
-            "
+            className="animate-hero-fade-up mt-4 text-2xl font-semibold leading-tight text-theme-muted sm:text-3xl"
+            style={{ animationDelay: "260ms" }}
           >
             Full Stack Developer
           </h2>
 
           <p
-            className="
-              mt-6
-              max-w-2xl
-              text-base
-              leading-7
-              text-theme-muted
-              sm:text-lg
-              sm:leading-8
-            "
+            className="animate-hero-fade-up mt-6 max-w-2xl text-base leading-7 text-theme-muted sm:text-lg sm:leading-8"
+            style={{ animationDelay: "260ms" }}
           >
             I build modern, scalable and user-focused web applications with
             React, TypeScript, Node.js, Express and MySQL.
           </p>
 
           {/* Tech stack */}
-          <div className="mt-6 flex flex-wrap gap-2">
+          <div
+            className="animate-hero-fade-up mt-6 flex flex-wrap gap-2"
+            style={{ animationDelay: "320ms" }}
+          >
             {technologys.map((technology) => (
-              <Badge>{technology}</Badge>
+              <Badge key={technology}>{technology}</Badge>
             ))}
           </div>
 
           {/* CTA */}
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <div
+            className="animate-hero-fade-up mt-8 flex flex-col gap-3 sm:flex-row"
+            style={{ animationDelay: "380ms" }}
+          >
             <Button
               href="#projects"
               variant="primary"
@@ -135,7 +83,10 @@ export default function Hero() {
           </div>
 
           {/* Social */}
-          <div className="mt-8 flex items-center gap-4">
+          <div
+            className="animate-hero-fade-up mt-8 flex items-center gap-4"
+            style={{ animationDelay: "440ms" }}
+          >
             <span className="text-sm text-theme-muted">Find me on</span>
 
             <SocialLinks />

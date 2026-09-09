@@ -1,4 +1,5 @@
 import { experiences } from "../../../config/experience";
+import AnimatedItem from "../../animations/AnimatedItem";
 import ExperienceCard from "./ExperienceCard";
 
 export default function ExperienceTimeline() {
@@ -10,17 +11,16 @@ export default function ExperienceTimeline() {
       />
 
       <div className="space-y-8">
-        {experiences.map((experience) => (
-          <div
-            key={experience.id}
-            className="relative md:pl-14"
-          >
+        {experiences.map((experience, index) => (
+          <div key={experience.id} className="relative md:pl-14">
             <div
               aria-hidden="true"
               className="absolute left-[13px] top-8 hidden h-3 w-3 rounded-full border-2 border-theme-primary bg-theme-background md:block"
             />
 
-            <ExperienceCard experience={experience} />
+            <AnimatedItem key={experience.id} delay={index * 120}>
+              <ExperienceCard experience={experience} />
+            </AnimatedItem>
           </div>
         ))}
       </div>

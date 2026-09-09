@@ -1,4 +1,5 @@
-import { projects } from "../../config/projects";
+import { projects } from "../../../config/projects";
+import AnimatedItem from "../../animations/AnimatedItem";
 
 import FeaturedProject from "./FeaturedProject";
 import ProjectCard from "./ProjectCard";
@@ -36,8 +37,10 @@ export default function Projects() {
             </div>
 
             <div className="grid gap-6 md:grid-cols-2">
-              {otherProjects.map((project) => (
-                <ProjectCard key={project.id} project={project} />
+              {otherProjects.map((project, index) => (
+                <AnimatedItem key={project.id} delay={index * 100}>
+                  <ProjectCard project={project} />
+                </AnimatedItem>
               ))}
             </div>
           </div>

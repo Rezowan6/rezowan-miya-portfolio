@@ -1,4 +1,5 @@
 import { skillCategories } from "../../../config/skills";
+import AnimatedItem from "../../animations/AnimatedItem";
 import SkillCategory from "./SkillCategory";
 import SkillsHeader from "./SkillsHeader";
 
@@ -12,8 +13,10 @@ export default function Skills() {
         <SkillsHeader />
 
         <div className="mt-12 grid gap-6 md:grid-cols-2">
-          {skillCategories.map((category) => (
-            <SkillCategory key={category.title} category={category} />
+          {skillCategories.map((category, index) => (
+            <AnimatedItem  key={category.title} delay={index * 80}>
+              <SkillCategory category={category} />
+            </AnimatedItem>
           ))}
         </div>
       </div>

@@ -1,10 +1,11 @@
+import Reveal from "./components/animations/Reveal";
 import Navbar from "./components/layout/Navbar";
-import Projects from "./components/projects/Projects";
 import About from "./components/sections/about/About";
 import Certificates from "./components/sections/certificates/Certificates";
 import Contact from "./components/sections/contact/Contact";
 import Experience from "./components/sections/experience/Experience";
 import Hero from "./components/sections/hero/Hero";
+import Projects from "./components/sections/projects/Projects";
 import Services from "./components/sections/services/Services";
 import Skills from "./components/sections/skill/Skills";
 
@@ -16,19 +17,33 @@ function App() {
       <main>
         <Hero />
 
-        <About />
+        <Reveal>
+          <About />
+        </Reveal>
 
-        <Skills />
+        <Reveal>
+          <Skills />
+        </Reveal>
 
-        <Projects />
+        <Reveal>
+          <Projects />
+        </Reveal>
 
-        <Experience />
+        <Reveal>
+          <Experience />
+        </Reveal>
 
-        <Services />
+        <Reveal>
+          <Services />
+        </Reveal>
 
-        <Certificates />
+        <Reveal>
+          <Certificates />
+        </Reveal>
 
-        <Contact />
+        <Reveal>
+          <Contact />
+        </Reveal>
       </main>
     </div>
   );

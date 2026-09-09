@@ -8,6 +8,7 @@ interface ButtonProps {
   icon?: ReactNode;
   target?: string;
   rel?: string;
+  className?: string;
   onClick?: () => void;
 }
 
@@ -19,40 +20,17 @@ export default function Button({
   icon,
   target,
   rel,
+  className,
   onClick,
 }: ButtonProps) {
-  const baseClasses = `
-    inline-flex
-    items-center
-    justify-center
-    gap-2
-    rounded-lg
-    px-6
-    py-3
-    text-sm
-    font-semibold
-    transition-all
-    duration-200
-  `;
+  const baseClasses = `${className} inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0`;
 
   const variantClasses =
     variant === "primary"
-      ? `
-        bg-theme-primary
-        text-theme-button-text
-        shadow-lg
-        shadow-theme-primary/10
-        hover:bg-theme-primary-hover
-        hover:shadow-theme-primary/20
-      `
-      : `
-        border
-        border-theme-border
-        bg-theme-card
-        text-theme-foreground
-        hover:border-theme-primary
-        hover:text-theme-primary
-      `;
+      ? `bg-theme-primary text-theme-button-text shadow-lg shadow-theme-primary/10
+       hover:bg-theme-primary-hover hover:shadow-theme-primary/20`
+      : `border border-theme-border bg-theme-card text-theme-foreground
+       hover:border-theme-primary hover:text-theme-primary`;
 
   return (
     <a

@@ -1,7 +1,7 @@
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
-import type { Project } from "../../config/projects";
-import ProjectTechnologyBadge from "../common/ProjectTechnologyBadge";
+import type { Project } from "../../../config/projects";
+import ProjectTechnologyBadge from "../../common/ProjectTechnologyBadge";
 import ProjectLinks from "./ProjectLinks";
 
 interface FeaturedProjectProps {
