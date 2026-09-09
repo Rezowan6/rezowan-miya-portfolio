@@ -2,6 +2,7 @@ import Navbar from "./components/layout/Navbar";
 import Projects from "./components/projects/Projects";
 import About from "./components/sections/about/About";
 import Certificates from "./components/sections/certificates/Certificates";
+import Contact from "./components/sections/contact/Contact";
 import Experience from "./components/sections/experience/Experience";
 import Hero from "./components/sections/hero/Hero";
 import Services from "./components/sections/services/Services";
@@ -27,12 +28,7 @@ function App() {
 
         <Certificates />
 
-        <section
-          id="contact"
-          className="flex min-h-[60vh] items-center justify-center border-t border-theme-border"
-        >
-          <h2 className="text-3xl font-bold">Contact</h2>
-        </section>
+        <Contact />
       </main>
     </div>
   );
