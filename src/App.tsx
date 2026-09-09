@@ -1,6 +1,7 @@
 import Navbar from "./components/layout/Navbar";
 import Projects from "./components/projects/Projects";
 import About from "./components/sections/about/About";
+import Certificates from "./components/sections/certificates/Certificates";
 import Experience from "./components/sections/experience/Experience";
 import Hero from "./components/sections/hero/Hero";
 import Services from "./components/sections/services/Services";
@@ -24,12 +25,7 @@ function App() {
 
         <Services />
 
-        <section
-          id="certificates"
-          className="flex min-h-[60vh] items-center justify-center border-t border-theme-border"
-        >
-          <h2 className="text-3xl font-bold">Certificates</h2>
-        </section>
+        <Certificates />
 
         <section
           id="contact"
