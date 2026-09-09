@@ -1,4 +1,5 @@
 import Navbar from "./components/layout/Navbar";
+import Projects from "./components/projects/Projects";
 import About from "./components/sections/about/About";
 import Hero from "./components/sections/hero/Hero";
 import Skills from "./components/sections/skill/Skills";
@@ -15,12 +16,7 @@ function App() {
 
         <Skills />
 
-        <section
-          id="projects"
-          className="flex min-h-[60vh] items-center justify-center border-t border-theme-border"
-        >
-          <h2 className="text-3xl font-bold">Projects</h2>
-        </section>
+        <Projects />
 
         <section
           id="experience"
