@@ -1,49 +1,81 @@
-import ThemeToggle from "./components/theme/ThemeToggle";
+import Navbar from "./components/layout/Navbar";
 
 function App() {
   return (
-    <main className="min-h-screen bg-theme-background text-theme-foreground">
-      <div className="mx-auto flex min-h-screen max-w-4xl flex-col items-center justify-center gap-8 px-6">
-        <ThemeToggle />
+    <div className="min-h-screen bg-theme-background text-theme-foreground">
+      <Navbar />
 
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-theme-foreground">
-            My Portfolio
-          </h1>
+      <main>
+        <section
+          id="home"
+          className="flex min-h-[calc(100vh-72px)] items-center justify-center px-6"
+        >
+          <div className="text-center">
+            <p className="mb-3 text-sm font-medium uppercase tracking-[0.2em] text-theme-primary">
+              Welcome to my portfolio
+            </p>
 
-          <p className="mt-4 text-theme-muted">
-            React • TypeScript • Node.js • MySQL
-          </p>
-        </div>
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
+              Hello, I&apos;m Rezowan
+            </h1>
 
-        <div className="w-full max-w-md rounded-2xl border border-theme-border bg-theme-card p-6">
-          <h2 className="text-xl font-semibold text-theme-foreground">
-            Theme System
-          </h2>
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-theme-muted sm:text-lg">
+              Full Stack Developer building modern,
+              scalable and professional web applications.
+            </p>
+          </div>
+        </section>
 
-          <p className="mt-2 text-theme-muted">
-            Dark and Light theme are working.
-          </p>
+        <section
+          id="about"
+          className="flex min-h-[60vh] items-center justify-center border-t border-theme-border"
+        >
+          <h2 className="text-3xl font-bold">About</h2>
+        </section>
 
-          <button
-            type="button"
-            className="
-              mt-6
-              rounded-lg
-              bg-theme-primary
-              px-5
-              py-3
-              font-medium
-              text-theme-button-text
-              transition
-              hover:bg-theme-primary-hover
-            "
-          >
-            Test Button
-          </button>
-        </div>
-      </div>
-    </main>
+        <section
+          id="skills"
+          className="flex min-h-[60vh] items-center justify-center border-t border-theme-border"
+        >
+          <h2 className="text-3xl font-bold">Skills</h2>
+        </section>
+
+        <section
+          id="projects"
+          className="flex min-h-[60vh] items-center justify-center border-t border-theme-border"
+        >
+          <h2 className="text-3xl font-bold">Projects</h2>
+        </section>
+
+        <section
+          id="experience"
+          className="flex min-h-[60vh] items-center justify-center border-t border-theme-border"
+        >
+          <h2 className="text-3xl font-bold">Experience</h2>
+        </section>
+
+        <section
+          id="services"
+          className="flex min-h-[60vh] items-center justify-center border-t border-theme-border"
+        >
+          <h2 className="text-3xl font-bold">Services</h2>
+        </section>
+
+        <section
+          id="certificates"
+          className="flex min-h-[60vh] items-center justify-center border-t border-theme-border"
+        >
+          <h2 className="text-3xl font-bold">Certificates</h2>
+        </section>
+
+        <section
+          id="contact"
+          className="flex min-h-[60vh] items-center justify-center border-t border-theme-border"
+        >
+          <h2 className="text-3xl font-bold">Contact</h2>
+        </section>
+      </main>
+    </div>
   );
 }
 
