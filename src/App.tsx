@@ -11,7 +11,7 @@ import Skills from "./components/sections/skill/Skills";
 
 function App() {
   return (
-    <div className="min-h-screen bg-theme-background text-theme-foreground">
+    <div className="min-h-screen w-full overflow-x-hidden bg-theme-background text-theme-foreground">
       <Navbar />
 
       <main>
