@@ -1,8 +1,9 @@
 import type { LucideIcon } from "lucide-react";
+import type { IconType } from "react-icons";
 
 interface SkillCardProps {
   name: string;
-  icon: LucideIcon;
+  icon: LucideIcon | IconType;
 }
 
 export default function SkillCard({ name, icon: Icon }: SkillCardProps) {

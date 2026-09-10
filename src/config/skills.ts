@@ -1,4 +1,5 @@
 import type { LucideIcon } from "lucide-react";
+import type { IconType } from "react-icons";
 import {
   Code2,
   Database,
@@ -9,16 +10,18 @@ import {
   Server,
   Settings,
 } from "lucide-react";
+import { FaGit, FaGithub, } from "react-icons/fa";
+
 
 export interface Skill {
   name: string;
-  icon: LucideIcon;
+  icon: LucideIcon | IconType;
 }
 
 export interface SkillCategory {
   title: string;
   description: string;
-  icon: LucideIcon;
+  icon: LucideIcon | IconType;
   skills: Skill[];
 }
 
@@ -115,11 +118,11 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       {
         name: "Git",
-        icon: GitBranch,
+        icon: FaGit,
       },
       {
         name: "GitHub",
-        icon: GitBranch,
+        icon: FaGithub,
       },
       {
         name: "Vite",

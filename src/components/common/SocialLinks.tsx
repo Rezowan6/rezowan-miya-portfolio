@@ -1,10 +1,10 @@
-import { GitForkIcon, Link2Icon } from "lucide-react";
+import { FaGithub, FaLinkedin, } from "react-icons/fa";
 import { socialLinks } from "../../config/social";
 
 // icon gula change korte hobe
 const iconMap = {
-  GitHub: GitForkIcon,
-  LinkedIn: Link2Icon,
+  GitHub: FaGithub,
+  LinkedIn: FaLinkedin,
 };
 
 export default function SocialLinks() {
