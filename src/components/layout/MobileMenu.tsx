@@ -14,9 +14,11 @@ export default function MobileMenu({
 }: MobileMenuProps) {
   return (
     <div
-      className={`overflow-hidden border-t border-theme-border bg-theme-background transition-all duration-300 ease-out lg:hidden
-            ${isOpen ? "visible translate-x-0 opacity-100" : "invisible translate-x-full opacity-0"}
-          `}
+      className={`overflow-hidden border-t border-theme-border bg-theme-background transition-all duration-300 ease-out lg:hidden ${
+        isOpen
+          ? "visible max-h-175 opacity-100"
+          : "invisible max-h-0 opacity-0"
+      }`}
     >
       <div className="mx-auto max-w-7xl px-6 py-5">
         <nav aria-label="Mobile navigation">
