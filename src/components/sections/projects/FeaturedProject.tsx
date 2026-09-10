@@ -12,7 +12,7 @@ export default function FeaturedProject({ project }: FeaturedProjectProps) {
   return (
     <article className="overflow-hidden rounded-3xl border border-theme-primary/20 bg-theme-card shadow-2xl shadow-theme-primary/5">
       <div className="grid lg:grid-cols-[1.05fr_0.95fr]">
-        <div className="relative min-h-[280px] overflow-hidden border-b border-theme-border bg-theme-background lg:min-h-full lg:border-b-0 lg:border-r">
+        <div className="relative p-8 min-h-[280px] overflow-hidden border-b border-theme-border bg-theme-background lg:min-h-full lg:border-b-0 lg:border-r">
           <img
             src={project.image}
             alt={`${project.title} project preview`}
@@ -21,7 +21,7 @@ export default function FeaturedProject({ project }: FeaturedProjectProps) {
 
           <div
             aria-hidden="true"
-            className="absolute inset-0 bg-gradient-to-t from-theme-background/70 via-transparent to-transparent"
+            className="absolute inset-0 bg-linear-to-t from-theme-background/70 via-transparent to-transparent"
           />
 
           <div className="absolute left-5 top-5">
