@@ -1,5 +1,4 @@
 import type { LucideIcon } from "lucide-react";
-import type { IconType } from "react-icons";
 import {
   Code2,
   Database,
@@ -10,8 +9,8 @@ import {
   Server,
   Settings,
 } from "lucide-react";
-import { FaGit, FaGithub, } from "react-icons/fa";
-
+import type { IconType } from "react-icons";
+import { FaGit, FaGithub } from "react-icons/fa";
 
 export interface Skill {
   name: string;
@@ -45,6 +44,10 @@ export const skillCategories: SkillCategory[] = [
       },
       {
         name: "Tailwind CSS",
+        icon: Monitor,
+      },
+      {
+        name: "Bootstrap CSS",
         icon: Monitor,
       },
       {
@@ -108,6 +111,14 @@ export const skillCategories: SkillCategory[] = [
       {
         name: "Relationships",
         icon: GitBranch,
+      },
+      {
+        name: "MongoDB",
+        icon: Database,
+      },
+      {
+        name: "Mongoose",
+        icon: HardDrive,
       },
     ],
   },
