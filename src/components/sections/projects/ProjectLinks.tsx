@@ -1,4 +1,5 @@
-import { ExternalLink, GitBranch } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 
 interface ProjectLinksProps {
   liveUrl: string;
@@ -28,7 +29,7 @@ export default function ProjectLinks({
         className="inline-flex items-center gap-2 rounded-lg border border-theme-border bg-theme-background px-4 py-2.5 text-sm font-semibold text-theme-foreground transition-all duration-200 hover:border-theme-primary hover:text-theme-primary"
       >
         GitHub
-        <GitBranch size={16} />
+        <FaGithub size={16} />
       </a>
     </div>
   );

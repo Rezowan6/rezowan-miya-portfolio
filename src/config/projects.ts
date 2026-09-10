@@ -40,8 +40,8 @@ export const projects: Project[] = [
       "MySQL database with Sequelize",
       "Progressive Web App support",
     ],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://mess-1-qbui.onrender.com",
+    githubUrl: "https://github.com/Rezowan6/Mess",
     featured: true,
   },
 
